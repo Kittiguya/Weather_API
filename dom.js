@@ -16,11 +16,9 @@ const displayError = (message) => {
     errorElement.textContent = message;
     document.body.appendChild(errorElement);
 };
-
 const kelvinToFahrenheit = (kelvin) => {
     return (kelvin - 273.15) * 9/5 + 32;
 };
-
 const fetchWeather = async (cityName) => {
     try {
         const apiKey = '084f3e0bb363631425193cce198d873a';
@@ -35,7 +33,6 @@ const fetchWeather = async (cityName) => {
         displayError("Location doesn't exist, or is misspelled. Please try a different one.");
     }
 };
-
 const displayWeather = (data) => {
     const { name } = data;
     const { temp_max, temp_min, humidity } = data.main;
@@ -52,7 +49,6 @@ const displayWeather = (data) => {
 
     setBackGroundImage(main); 
 };
-
 const setBackGroundImage = (weather) => {
     console.log('Weather:', weather);
     let imageUrl; 
@@ -76,8 +72,6 @@ const setBackGroundImage = (weather) => {
     console.log('Image URL:', imageUrl);
     document.body.style.backgroundImage = `url(${imageUrl})`;
 };
-
-
 searchForm.addEventListener('submit', (event) => {
     event.preventDefault();
     const cityName = weatherInput.value.trim().toLowerCase();
