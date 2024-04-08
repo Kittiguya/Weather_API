@@ -1,0 +1,37 @@
+This is the process i used to make this API work the way it does. (Reccomended to me by Buhai)
+
+
+
+Step 1: Started with HTML to design the webpage to look like how wanted, it also covered naming specific tags (which saved tons of time and headache later). 
+
+Step 2: Then i went to CSS to style the webpage the way i wanted it to look (i opted for gradient colors) 
+    After i set the CSS container and each color gradient scheme up.
+
+Step 3: I made the weather call function that would call and display the results on a single line. 
+
+Step 4: After the weather call function was made; 
+    I made another function that would display the weather information in the right spots. (dictated by the HTML tags i created on setup) 
+
+Step 5: Once the results were confirmed to display i went and found the way to convert farhen to celcius. Assigned it its own name as its own function. 
+
+Step 6: Then i went back to display weather, and assigned the conversion function a name that would convert the specified values into what i wanted. 
+
+Step sit back and inspect: After i had confirmed the conversion was working and displaying properly, I noticed i had some wierd lookin white space behind main CSS container. 
+
+Step 7: I was gonna do gradient colors, but felt it was already filled with multiple different gradient colour schemes, 
+    so i opted for a picture that would change based on the forecast that the api said. I found a picture, tried putting it on, nothing worked. 
+    Googled a couple things realized i could set the background up using a function 
+    (this would be required to make it a reactive background depending on Forecast output to the user, and i could also use GIFs or other media instead of just pictures.)
+
+Step 8: This is where i realized i could use Switch Statements (learned during the night before on my randomizer project) and i opted to use them with the case statements 
+    being the info from Forecast i needed. 
+
+Step 9: I assigned imageURLs to the specified gif file location in the images folder.
+
+Step 10: Once those images were uploaded to my folder, i went through the struggle of finding out which names the forecast was using for each weather condition. 
+    Once i veriifed what i could (about 15-20 cities i tried) i made sure the images case 'names' match that forecast condition. 
+    I verified the images would load when displayed, Which was weird and took 2 hours on its own. But once i got that to display i kind of called it good. 
+    I couldnt test snowy for the proper term because i couldnt find a snow city. 
+
+Step 10 continuation: The default image wouldnt display upon loading or refreshing the page, so i chopped it up to me just messing it up and called it good. 
+    Cause i liked the aesthetic of a blank background, typing in a city, then being met with a gif background representative of the weather forecast.
