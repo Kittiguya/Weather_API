@@ -65,6 +65,9 @@ const setBackGroundImage = (weather) => {
         case 'snowy':
             imageUrl = '/images/snowy.gif'; // i seriously cant find a city that its snowing in
             break;
+        case 'thunderstorm':
+            imageUrl = '/images/thunderstorm.gif'
+            break;
         default:
             imageUrl = '/images/sunny.jpg';  //default image isnt loading upon entering the page.
             break;
